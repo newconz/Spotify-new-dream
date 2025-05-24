@@ -45,5 +45,11 @@
     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
     loading="lazy">
   </iframe>
+
+  <script>
+    setInterval(() => {
+      document.querySelector('iframe').contentWindow.location.reload();
+    }, 1000 * 60 * 2.5); // Laddar om sidan var 2,5 minut
+  </script>
 </body>
 </html>
